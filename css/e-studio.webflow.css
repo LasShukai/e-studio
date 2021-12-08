@@ -28,6 +28,10 @@ h1 {
   text-decoration: underline;
 }
 
+.nav-link.w--current {
+  color: #fff;
+}
+
 .nav-menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -147,6 +151,11 @@ h1 {
   text-decoration: none;
 }
 
+.button.w--current {
+  color: #000;
+  font-weight: 400;
+}
+
 .p {
   display: block;
   overflow: visible;
@@ -188,10 +197,11 @@ h1 {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  opacity: 0.85;
 }
 
 .banner {
-  height: 30vh;
+  height: 60vh;
   margin-top: 239px;
   margin-bottom: 239px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(hsla(0, 0%, 100%, 0.08))), url('../images/DSC01192.jpg');
@@ -388,23 +398,6 @@ h1 {
   object-fit: contain;
 }
 
-.map {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .slide {
   height: 100%;
 }
@@ -502,6 +495,11 @@ h1 {
   display: flex;
   padding-top: 60px;
   padding-bottom: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -512,13 +510,6 @@ h1 {
   align-items: center;
   background-color: #000;
   text-align: center;
-}
-
-.calendarwrapper {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
 }
 
 .text-block {
@@ -545,6 +536,7 @@ h1 {
   order: 1;
   color: #a3a3a3;
   font-size: 20px;
+  line-height: 1.5;
 }
 
 .cardbg-about {
@@ -556,7 +548,7 @@ h1 {
   display: flex;
   width: 600px;
   height: 600px;
-  padding: 35px;
+  padding: 45px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -575,6 +567,7 @@ h1 {
 }
 
 .card-imge {
+  position: relative;
   border-radius: 20px 0px 0px 20px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -666,15 +659,15 @@ h1 {
   background-color: #000;
 }
 
-.div-block {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: #fbe500;
+.image-4 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.link-block {
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 991px) {
@@ -735,8 +728,13 @@ h1 {
     overflow: visible;
     padding-top: 0px;
     padding-bottom: 0px;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
     color: #fff;
     font-size: 30px;
+    text-align: center;
   }
 
   .banner {
@@ -769,6 +767,7 @@ h1 {
     display: flex;
     width: 50px;
     height: 50px;
+    padding: 5px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -778,6 +777,12 @@ h1 {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .menu-button.w--open {
@@ -811,10 +816,6 @@ h1 {
   .footer {
     padding-right: 20px;
     padding-left: 20px;
-  }
-
-  .calendarwrapper {
-    padding-right: 0px;
   }
 
   .card-text-about {
@@ -861,27 +862,8 @@ h1 {
     align-self: stretch;
   }
 
-  .line {
-    width: auto;
-    height: 3px;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    -ms-grid-row-align: auto;
-    align-self: auto;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 auto;
-    -ms-flex: 0 auto;
-    flex: 0 auto;
-    background-color: #fff;
-    -o-object-fit: fill;
-    object-fit: fill;
-  }
-
-  .div-block-2 {
-    position: relative;
-    width: auto;
-    height: 3px;
-    background-color: #fff;
+  .icon-close {
+    display: none;
   }
 }
 
@@ -989,11 +971,6 @@ h1 {
     border-bottom-right-radius: 0px;
   }
 
-  .line {
-    padding-right: 0px;
-    padding-bottom: 0px;
-  }
-
   .icon-close {
     display: none;
   }
@@ -1017,7 +994,7 @@ h1 {
   }
 
   .container {
-    position: relative;
+    position: static;
     margin-top: 40px;
     margin-bottom: 40px;
     padding-right: 10px;
@@ -1069,8 +1046,15 @@ h1 {
   }
 
   .banner {
-    margin-top: 185px;
+    position: static;
+    z-index: -1;
+    margin-top: 310px;
     margin-bottom: 70px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.28)), to(rgba(0, 0, 0, 0.28))), -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(55%, hsla(0, 0%, 100%, 0.08)), to(rgba(0, 0, 0, 0.9))), url('../images/DSC01192.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), linear-gradient(180deg, #000, hsla(0, 0%, 100%, 0.08) 55%, rgba(0, 0, 0, 0.9)), url('../images/DSC01192.jpg');
+    background-position: 0px 0px, 0px 0px, 50% 50%;
+    background-size: auto, auto, cover;
+    background-repeat: repeat, repeat, no-repeat;
   }
 
   .herotitle {
@@ -1108,8 +1092,8 @@ h1 {
   }
 
   .cards {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   .carditem {
@@ -1164,7 +1148,7 @@ h1 {
 
   .video {
     position: relative;
-    height: 150px;
+    height: auto;
   }
 
   .navwrapper {
@@ -1177,26 +1161,13 @@ h1 {
   }
 
   .cardcontainer {
-    position: relative;
+    position: static;
   }
 
   .footer {
     padding-right: 20px;
     padding-left: 20px;
     text-align: left;
-  }
-
-  .calendarwrapper {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    grid-auto-columns: 1fr;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
   }
 
   .card-text-about {
@@ -1225,6 +1196,10 @@ h1 {
     flex-direction: column;
   }
 
+  .pageloadinganimation {
+    display: none;
+  }
+
   .calendar {
     position: relative;
     width: auto;
@@ -1233,12 +1208,8 @@ h1 {
     object-fit: cover;
   }
 
-  .line {
-    display: block;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 auto;
-    -ms-flex: 0 auto;
-    flex: 0 auto;
+  .mask {
+    height: 100%;
   }
 }
 
