@@ -86,7 +86,7 @@ h1 {
   max-width: 1020px;
   margin-top: 220px;
   margin-bottom: 180px;
-  padding: 0px 10px;
+  padding: 0px 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -103,15 +103,15 @@ h1 {
 }
 
 .brand {
-  width: 200px;
-  height: 50px;
+  width: auto;
+  height: 60px;
   -o-object-fit: contain;
   object-fit: contain;
 }
 
 .body {
   background-color: #241714;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .title {
@@ -142,9 +142,9 @@ h1 {
   padding: 20px;
   border-radius: 56px;
   background-color: #fbe500;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #000;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
@@ -161,7 +161,7 @@ h1 {
   overflow: visible;
   max-width: 500px;
   min-width: auto;
-  padding-top: 10px;
+  padding-top: 20px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -174,7 +174,7 @@ h1 {
   padding-top: 20px;
   padding-bottom: 10px;
   border-bottom: 0.5px none #fff;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #fbe500;
   font-size: 20px;
 }
@@ -201,23 +201,11 @@ h1 {
 }
 
 .banner {
-  height: 60vh;
+  height: 20vh;
   margin-top: 239px;
   margin-bottom: 239px;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.9)),
-      to(hsla(0, 0%, 100%, 0.08))
-    ),
-    url("../images/DSC01192.jpg");
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.9),
-      hsla(0, 0%, 100%, 0.08)
-    ),
-    url("../images/DSC01192.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(hsla(0, 0%, 100%, 0.08))), url('../images/DSC01192.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), hsla(0, 0%, 100%, 0.08)), url('../images/DSC01192.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -227,7 +215,7 @@ h1 {
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .dropdown {
@@ -297,7 +285,7 @@ h1 {
 }
 
 .formtitle {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -311,8 +299,7 @@ h1 {
   grid-auto-columns: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 16px;
-  grid-template-areas:
-    ". ."
+  grid-template-areas: ". ."
     ". ."
     ". ."
     ". ."
@@ -426,6 +413,8 @@ h1 {
 .navwrapper {
   max-width: 1020px;
   margin-top: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .bgimg {
@@ -435,7 +424,7 @@ h1 {
   right: auto;
   bottom: 0%;
   z-index: -99;
-  width: 100vw;
+  width: 60vw;
   height: 40vh;
   margin-top: -399px;
   margin-left: -1029px;
@@ -493,7 +482,7 @@ h1 {
   width: 100vw;
   height: auto;
   padding-left: 0px;
-  background-image: url("../images/BG.png");
+  background-image: url('../images/BG.png');
   background-position: 50% 50%;
   background-size: cover;
   opacity: 0.3;
@@ -506,8 +495,8 @@ h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 69px;
+  padding-bottom: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -547,7 +536,7 @@ h1 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
-  color: #fff;
+  color: #a3a3a3;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -681,6 +670,38 @@ h1 {
   margin-bottom: 10px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.hero-overlay {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  max-height: 780px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/products-p.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/products-p.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, contain;
+  color: #fff;
+}
+
+.centered-container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -910,27 +931,8 @@ h1 {
   .banner {
     margin-top: 175px;
     margin-bottom: 175px;
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(0, 0, 0, 0.28)),
-        to(rgba(0, 0, 0, 0.28))
-      ),
-      -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(55%, hsla(0, 0%, 100%, 0.08)), to(rgba(0, 0, 0, 0.9))),
-      url("../images/DSC01192.jpg");
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.28),
-        rgba(0, 0, 0, 0.28)
-      ),
-      linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.9),
-        hsla(0, 0%, 100%, 0.08) 55%,
-        rgba(0, 0, 0, 0.9)
-      ),
-      url("../images/DSC01192.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.28)), to(rgba(0, 0, 0, 0.28))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(55%, hsla(0, 0%, 100%, 0.08)), to(rgba(0, 0, 0, 0.9))), url('../images/DSC01192.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), linear-gradient(180deg, rgba(0, 0, 0, 0.9), hsla(0, 0%, 100%, 0.08) 55%, rgba(0, 0, 0, 0.9)), url('../images/DSC01192.jpg');
     background-position: 0px 0px, 0px 0px, 50% 50%;
     background-size: auto, auto, cover;
     background-repeat: repeat, repeat, no-repeat;
@@ -1005,6 +1007,10 @@ h1 {
 
   .icon-close {
     display: none;
+  }
+
+  .hero-overlay {
+    padding: 40px 20px;
   }
 }
 
@@ -1082,27 +1088,8 @@ h1 {
     z-index: -1;
     margin-top: 310px;
     margin-bottom: 70px;
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(0, 0, 0, 0.28)),
-        to(rgba(0, 0, 0, 0.28))
-      ),
-      -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(55%, hsla(0, 0%, 100%, 0.08)), to(rgba(0, 0, 0, 0.9))),
-      url("../images/DSC01192.jpg");
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.28),
-        rgba(0, 0, 0, 0.28)
-      ),
-      linear-gradient(
-        180deg,
-        #000,
-        hsla(0, 0%, 100%, 0.08) 55%,
-        rgba(0, 0, 0, 0.9)
-      ),
-      url("../images/DSC01192.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.28)), to(rgba(0, 0, 0, 0.28))), -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(55%, hsla(0, 0%, 100%, 0.08)), to(rgba(0, 0, 0, 0.9))), url('../images/DSC01192.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), linear-gradient(180deg, #000, hsla(0, 0%, 100%, 0.08) 55%, rgba(0, 0, 0, 0.9)), url('../images/DSC01192.jpg');
     background-position: 0px 0px, 0px 0px, 50% 50%;
     background-size: auto, auto, cover;
     background-repeat: repeat, repeat, no-repeat;
@@ -1262,6 +1249,10 @@ h1 {
   .mask {
     height: 100%;
   }
+
+  .centered-container {
+    text-align: left;
+  }
 }
 
 #w-node-_360b7d3b-b47c-688c-6797-6036287bd8a9-372bfb19 {
@@ -1312,7 +1303,7 @@ h1 {
 }
 
 @media screen and (max-width: 479px) {
-  .access > #w-node-d89a1c6a-7de4-92cf-c3b5-3f0c03eaf895-372bfb19 {
+  .access>#w-node-d89a1c6a-7de4-92cf-c3b5-3f0c03eaf895-372bfb19 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
@@ -1370,8 +1361,8 @@ h1 {
 }
 
 @font-face {
-  font-family: "Digitaldreamfatskewnarrow";
-  src: url("../fonts/DigitaldreamFatSkewNarrow.ttf") format("truetype");
+  font-family: 'Digitaldreamfatskewnarrow';
+  src: url('../fonts/DigitaldreamFatSkewNarrow.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
