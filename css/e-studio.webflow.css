@@ -167,7 +167,7 @@ h1 {
   -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .cardtitle {
@@ -253,7 +253,7 @@ h1 {
 }
 
 .dropdowncontent {
-  position: absolute;
+  position: relative;
   overflow: hidden;
   width: 100%;
 }
@@ -324,6 +324,10 @@ h1 {
 .text-field.longtext {
   height: 300px;
   text-align: left;
+}
+
+.cards {
+  position: relative;
 }
 
 .access {
