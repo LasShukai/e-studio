@@ -234,11 +234,10 @@ h1 {
 }
 
 .dropdown {
-  position: fixed;
+  position: relative;
   border-style: none;
   border-width: 1px;
   border-color: #fff;
-  margin-bottom: 40px;
 }
 
 .trigger {
@@ -272,6 +271,7 @@ h1 {
   position: relative;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .downicon {
